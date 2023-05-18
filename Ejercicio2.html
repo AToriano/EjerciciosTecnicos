@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicios if and else</h1>
+    <button onclick="ej1()">Es nro par?</button><br />
+    <button onclick="ej2()">Divisible x 5?</button><br />
+    <button onclick="ej3()">Divisible x 11 y 5?</button><br />
+    <button onclick="ej4()">Número mayor</button><br />
+    <button onclick="ej5()">Mayor con ternario</button><br />
+    <button onclick="ej6()">Cómo empieza el string?</button><br />
+    <button onclick="ej7()">Suma de angulos internos de un triángulo</button
+    ><br />
+
+    <script>
+      function ej1() {
+        var nro = prompt("Ingresa un número:");
+        nro = parseInt(nro);
+        if (nro % 2 === 0) {
+          alert("El número es par.");
+        } else {
+          alert("El número es impar.");
+        }
+      }
+      function ej2() {
+        var nro = prompt("Ingresa un número:");
+        nro = parseInt(nro);
+        if (nro % 5 === 0) {
+          console.log("El número es divisible por 5");
+        } else {
+          console.log("El número no es divisible por 5");
+        }
+      }
+      function ej3() {
+        var nro = prompt("Ingresa un número:");
+        nro = parseInt(nro);
+        if (nro % 5 === 0 && nro % 11 === 0) {
+          console.log("El número es divisible por 11 y 5");
+        } else {
+          console.log("El número no es divisible por 11 Y 5");
+        }
+      }
+      function ej4() {
+        var nro1 = prompt("Ingrese el 1er número:");
+        var nro2 = prompt("Ingrese el 2do número:");
+        nro1 = parseInt(nro1);
+        nro2 = parseInt(nro2);
+        if (nro1 > nro2) {
+          alert("es mayor es: " + nro1);
+        } else {
+          alert("es mayor es: " + nro2);
+        }
+      }
+      function ej5() {
+        var nro1 = prompt("Ingrese el 1er número:");
+        var nro2 = prompt("Ingrese el 2do número:");
+        nro1 = parseInt(nro1);
+        nro2 = parseInt(nro2);
+        nro1 > nro2
+          ? alert("es mayor es: " + nro1)
+          : alert("es mayor es: " + nro2);
+      }
+      function ej6() {
+        var cadena = prompt("Ingresa una cadena:");
+        var primerCaracter = cadena.charAt(0);
+        if (!isNaN(primerCaracter)) {
+          alert("El string comienza con un número.");
+        } else {
+          alert("El string comienza con una letra.");
+        }
+      }
+      function ej7() {
+        var primerAngulo = prompt("Ingrese 1er ángulo");
+        var segundoAngulo = prompt("Ingrese 2do ángulo");
+        var tercerAngulo = prompt("Ingrese 3er ángulo");
+        primerAngulo = parseInt(primerAngulo);
+        segundoAngulo = parseInt(segundoAngulo);
+        tercerAngulo = parseInt(tercerAngulo);
+        var suma = primerAngulo + segundoAngulo + tercerAngulo;
+        suma === 180 ? alert("Triángulo válido") : alert("Triángulo inválido");
+      }
+    </script>
+  </body>
+</html>

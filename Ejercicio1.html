@@ -1,19 +1,43 @@
-<!-- var nro1 = prompt("Ingrese el 1er número:");
-var nro2 = prompt("Ingrese el 2do número:");
-nro1 = parseInt(nro1);
-nro2 = parseInt(nro2);
-var resultado = nro1 + nro2;
-alert("La suma es: " + resultado); -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicios operaciones básicas</h1>
+    <button onclick="ej1()">Ejercicio1</button><br />
+    <button onclick="ej2()">Ejercicio2</button><br />
+    <button onclick="ej3()">Ejercicio3</button><br />
+    <button onclick="ej4()">Ejercicio4</button><br />
 
-<!-- var temp = prompt("Ingrese temperatura en grados celcius:");
-var temp= parseFloat(temp);
-var res = (temp * 1.8)+32;
-alert ("corresponden a grados fahrenheit : "+res); -->
-
-<!-- var nro1 = prompt("Ingrese un nro:");
-var nro1= parseFloat(nro1);
-var res = (nro1/10);
-alert ("Ese nro dividio 10 es : "+res); -->
-
-<!-- var a = [1,2,3];
-alert (typeof(a)); -->
+    <script>
+      function ej1() {
+        var nro1 = prompt("Ingrese el 1er número:");
+        var nro2 = prompt("Ingrese el 2do número:");
+        nro1 = parseInt(nro1);
+        nro2 = parseInt(nro2);
+        var resultado = nro1 + nro2;
+        alert("La suma es: " + resultado);
+      }
+      function ej2() {
+        var temp = prompt("Ingrese temperatura en grados celcius:");
+        var temp = parseFloat(temp);
+        var res = temp * 1.8 + 32;
+        alert("corresponden a grados fahrenheit : " + res);
+      }
+      function ej3() {
+        var nro1 = prompt("Ingrese un nro:");
+        var nro1 = parseFloat(nro1);
+        var res = nro1 / 10;
+        alert("Ese nro dividio 10 es : " + res);
+      }
+      function ej4() {
+        var a = [1, 2, 3];
+        alert(typeof a);
+      }
+    </script>
+  </body>
+</html>
